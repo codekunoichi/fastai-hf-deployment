@@ -61,7 +61,7 @@ This repo is not:
 
 ## Background
 
-This work builds on concepts from the fast.ai Practical Deep Learning for Coders course:
+This work builds on concepts from the fast.ai [Practical Deep Learning for Coders course](https://course.fast.ai/Lessons/lesson2.html):
 - Training a simple image classifier
 - Extending the workflow to a custom dataset
 - Exporting a trained learner
