@@ -1,0 +1,4 @@
+- “module ‘gradio’ has no attribute inputs” → old tutorial → use gr.Image()
+- “push rejected contains binary files” → add LFS tracking or avoid committing binaries
+- “code expected at most 16 arguments got 18” → python mismatch → set python_version: 3.12 in HF README
+- “NumPy 1.x compiled module cannot run in NumPy 2.x” → pin numpy<2, avoid pip -U
