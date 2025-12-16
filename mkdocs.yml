@@ -1,0 +1,9 @@
+site_name: fastai → Hugging Face Deployment
+repo_url: https://github.com/codekunoichi/fastai-hf-deployment
+nav:
+  - Home: index.md
+  - Bear Detector Journey: bear-detector-journey.md
+  - Troubleshooting: troubleshooting.md
+  - HF Spaces Checklist: hf-spaces-checklist.md
+theme:
+  name: material
