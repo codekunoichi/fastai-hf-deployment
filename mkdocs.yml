@@ -1,4 +1,5 @@
 site_name: fastai → Hugging Face Deployment
+site_url: https://codekunoichi.github.io/fastai-hf-deployment/
 repo_url: https://github.com/codekunoichi/fastai-hf-deployment
 nav:
   - Home: index.md
