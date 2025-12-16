@@ -39,7 +39,7 @@ This repo is not:
 
 ## Repository Structure
 
-.
+```
 ├── apps/
 │   └── bear-detector/
 │       ├── app.py
@@ -56,7 +56,7 @@ This repo is not:
 ├── requirements-docs.txt
 └── .github/workflows/
     └── publish-mkdocs.yml
-
+```
 ---
 
 ## Background
