@@ -187,3 +187,39 @@ Deployment is where assumptions surface, and where real engineering begins.
 - fastai learners moving beyond notebooks
 - anyone deploying pickled ML models
 - engineers new to Hugging Face Spaces
+
+---
+
+## What I Learned (The Real Takeaways)
+
+1. **Model training is the easy part**  
+   Getting a model to train and infer in a notebook is only the beginning. The real work starts once you try to move that model outside the notebook.
+
+2. **Environment drift is the #1 deployment killer**  
+   Small differences in Python versions, NumPy versions, or library APIs can completely break a deployment, even when the code looks identical.
+
+3. **Pickled models are not portable artifacts**  
+   A `.pkl` file is not a neutral format. It encodes Python internals and must be created and loaded under compatible Python versions.
+
+4. **Blind upgrades (`pip -U`) are dangerous in ML**  
+   Upgrading dependencies without understanding transitive impacts can silently break compiled libraries and invalidate an otherwise working environment.
+
+5. **Tutorials rot faster than APIs**  
+   Deployment tutorials age quickly. Expect API drift and be prepared to read library docs and error messages instead of copying code blindly.
+
+6. **Git is part of the ML stack**  
+   Authentication, large file handling, and repo hygiene are not “side tasks.” They are core skills required to ship ML systems.
+
+7. **Binary artifacts need deliberate handling**  
+   Models and assets require tools like Git LFS or external storage. Treating them like normal source files will fail at scale.
+
+8. **Logs tell a story — if you read the right ones**  
+   Build logs, container logs, and startup prints each answer different questions. Knowing where to look saves hours of guesswork.
+
+9. **Deployment requires thinking in systems, not scripts**  
+   Successful deployment is about understanding how environments, tools, CI/CD, and runtime constraints interact — not just writing Python code.
+
+10. **Documentation is part of engineering, not an afterthought**  
+    Writing down what broke, why it broke, and how it was fixed turns frustration into reusable knowledge — for future-me and others.
+
+This document exists so I never have to relearn these lessons the hard way again.
